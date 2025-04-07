@@ -34,6 +34,15 @@
                   size-xl="6"
                 >
                   <br />
+                  <!--ion-input
+                    label="Correo electrónico"
+                    label-placement="floating"
+                    type="email"
+                    formControlName="email"
+                    placeholder="Ingrese su correo"
+                    fill="outline"
+                  ></ion-input-->
+
                   <ion-input
                     label="Correo electrónico"
                     label-placement="floating"
@@ -41,6 +50,11 @@
                     formControlName="email"
                     placeholder="Ingrese su correo"
                     fill="outline"
+                    autocapitalize="off"
+                    autocorrect="off"
+                    spellcheck="false"
+                    enterkeyhint="next"
+                     mode="ios"
                   ></ion-input>
 
                   @if (loginForm.get('email')?.invalid &&
