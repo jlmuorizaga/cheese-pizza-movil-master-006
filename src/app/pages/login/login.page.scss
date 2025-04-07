@@ -12,3 +12,23 @@
 ion-textarea {
   text-align: left;
 }
+
+.input-wrapper {
+  --background: #ffffff;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+ion-input {
+  font-size: 16px !important; // Evita zoom en iPhone
+}
+
+ion-label {
+  color: var(--ion-color-medium);
+}
+
